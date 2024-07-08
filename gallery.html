@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="your,keywords,here">
+    <meta name="author" content="Your Name">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Sahasra Collage</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-lYFkg6eZ2q7hnkxZ9pPt2K/CszkQzPLhtlDwe2lnJQmI+iY9GM1f3tmzxoTfwUKl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-lYFkg6eZ2q7hnkxZ9pPt2K/CszkQzPLhtlDwe2lnJQmI+iY9GM1f3tmzxoTfwUKl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+
+<body onload="changeBrochure()">
+    <header>
+        <div class="  d-none   d-lg-block">
+            <div class="row d-flex">
+                <!-- Logo -->
+                <div class="col-md-3 d-flex  ">
+                    <a href="./index.html"><img class="img-fluid  mrg_img" style="height:75px;"
+                            src="./assets/images/logo.png" alt=""></a>
+                            <a href="./index.html"><img class="img-fluid  mrg_img" style="height:75px;"
+                                src="./assets/images/sahasra new logo.jpg" alt=""></a>
+                </div>
+
+                <!-- Telephone -->
+                <div class="col-md-3 d-flex align-items-center  head_telephone">
+                    <div class="green-circle">
+                        <i class="bi bi-telephone white-icon align-middle"></i>
+                    </div>
+                    <div>
+                        <p style="margin-left: -63px; margin-bottom: 0px; color: grey;"> <strong>Call</strong>
+                        </p>
+                        <p style="margin-top: 0px;">98588 94999
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Geo Location -->
+
+                <div class="col-md-3 d-flex align-items-center  head_location">
+                    <div class="green-circle">
+                        <i class="bi bi-geo-alt white-icon"></i>
+                    </div>
+                    <div class="head_content">
+                        <p class="head_address" style="margin-left: -110px; margin-bottom: 0px; color: grey;">
+                            <strong>Address</strong>
+                        </p>
+                        <p class="head_kakinda" style="margin-top: 0px;">Bhaskar Nagar, kakinada
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-3 d-flex align-items-center head_contact ">
+                    <div class="bg-green" style="margin-left: 50px;">
+                        <a href="contact.html" style="color: white; text-decoration: none;">
+                            <p class="paragraph"><strong> Contact Us </strong> </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light    nav_top">
+        <div class="container   ">
+            <img class="img_logo  " style="width: 160px; height: 75px;" src="./assets/images/logo.png" alt="">
+            <a href="./index.html"><img class="img-fluid img_logo mrg_img" style="height:75px;"
+                src="./assets/images/sahasra new logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav_names" id="navbarNav">
+                <ul class="navbar-nav  nav_auto">
+                    <li class="nav-item">
+                        <a style="color:white; font-weight: bold;" class="  nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:white; font-weight: bold;" class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:white; font-weight: bold;" class="nav-link" href="admission.html">Admission</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a style="color:white; font-weight: bold;"  class="nav-link" href="courses.html">Courses</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a style="color:white; font-weight: bold;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="color:black; font-weight: bold;" class="dropdown-item" href="./mpc.html">M.P.C</a>
+                            <a style="color:black; font-weight: bold;" class="dropdown-item"
+                                href="./bipc.html">BI.P.C</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:white; font-weight: bold;" class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color:white; font-weight: bold;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Sahasra excellence
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="color:black; font-weight: bold;" class="dropdown-item"
+                                href="achievements.html">Achivements</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center fancy">
+                        <a style="color:white; font-weight: bold;" class="nav-link" >Download</a>
+                        <div>
+                            <a id="brochureLink" href="#" download>
+                                <i style="font-weight: bold; width: 24px; height: 24px; margin-top: 0px;" class="bi bi-download solid-icon bg-circle-red"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item only_toggle d-xs-block d-lg-none">
+                        <a style="color:white; font-weight: bold;" class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <img class="img-fluid" src="assets/images/gallery title image.png" style="width: 6000px;" alt="">
+
+
+
+    <main class="container mt-4">
+        <!-- Main content -->
+
+        <!-- section1 -->
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-row justify-content-center">
+                        <a href="./index.html" style="color:#112629"><i class="fa-solid fa-chevron-left icon1"></i></a>
+                        <h2 class="main-heading">Gallery</h2>
+                        <a><i class="fa-solid fa-arrow-turn-down icon2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="container  hello mt-5">
+            <div class="row d-flex justify-content-center"> <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-5 col-md-5">
+                  
+                    <img class="img-fluid  " src="assets/images/mpc theory image 2.png" alt="">
+
+                </div>
+                <div class="col-lg-7  col-md-7">
+                    <img class="img-fluid  " src="assets/images/670 x 278.png" alt="">
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center mt-3">
+
+                <h3 class="main-heading " style="color: rgb(187, 38, 38);">The Theory Guides & The Practical Decides</h3>
+                
+            </div>
+
+
+            <div class="row d-flex justify-content-center  second_row_img  ">
+                <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-3 col-md-3">
+                    <img class="img-fluid img_seven" src="assets/images/gallery page labs 7.png" alt="">
+
+                    <!-- <img class="img-fluid img_three" src="assets/images/ambience image.jpg"   alt=""> -->
+                </div>
+                <div class="col-lg-4  col-md-4">
+
+                    <img class="img-fluid img_four" src="assets/images/second section.png" alt="">
+                </div>
+                <div class="col-lg-5  col-md-5">
+                    <!-- <img class="img-fluid img_five "  src="assets/images/5-sports related images.png" alt=""> -->
+                    <img class="img-fluid img_eight" src="assets/images/gallery page labs 8.png" alt="">
+
+
+                </div>
+
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center">
+
+                <h3 class="main-heading " style="color: rgb(187, 38, 38);">Transforming hours into knowledge.
+                </h3>
+            </div>
+
+
+            <div class="row d-flex justify-content-center third_row_img  ">
+                <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-3 col-md-4">
+                    <img class="img-fluid img_six" src="assets/images/3-1.png" alt="">
+                </div>
+                <div class="col-lg-4  col-md-4">
+                    <img class="img-fluid img_seven" src="assets/images/3 - 2.png" alt="">
+                </div>
+                <div class="col-lg-5  col-md-4">
+                    <img class="img-fluid img_eight" src="assets/images/3-3.png" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center min_nine">
+
+                <h3 class="main-heading " style="color: rgb(187, 38, 38);">Savor the flavors of home in our hostel dining..
+                </h3>
+            </div>
+
+            <div class="row d-flex justify-content-center fourth_row_img  ">
+                <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-4 col-md-4">
+                    <img class="img-fluid img_nine" src="assets/images/4-1.png" alt="">
+                </div>
+                <div class="col-lg-8  col-md-8">
+                    <img class="img-fluid img_ten" src="assets/images/4-2.png" alt="">
+                </div>
+
+
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center only_nine_flover">
+
+                <h3 class="main-heading " style="color: rgb(187, 38, 38);">Embrace diversity through vibrant cultural events.
+                </h3>
+            </div>
+
+            <div class="row d-flex justify-content-center fivth_row_img  ">
+                <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-8 col-md-8">
+                    <img class="img-fluid img_eleven" src="assets/images/5-1.png" alt="">
+                </div>
+                <div class=" pad_for_twevel  col-lg-4  col-md-4">
+                    <img class="img-fluid img_twevel" src="assets/images/5-2.png" alt="">
+                </div>
+
+
+            </div>
+
+
+            <div class="row d-flex justify-content-center sixth_row_img   ">
+                <!-- Add justify-content-center to center the images -->
+                <div class="col-lg-12  ">
+                    <img class="img-fluid  " src="assets/images/6.png" alt="">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        
+
+        <!-- FOR MOBILE VIEW -->
+        <div class="container  only_for_mobile ">
+            <div class="row  "> <!-- Add justify-content-center to center the images -->
+                <img class="img-fluid p-2 " src="assets/images/mpc theory image 2.png" alt="">
+                <img class="img-fluid  p-2 " src="assets/images/670 x 278.png" alt="">
+                <div class="d-flex flex-row justify-content-center mt-3">
+
+                    <h3 class="main-heading " style="color: rgb(187, 38, 38);">The Theory Guides & The Practical Decides</h3>
+                    
+                </div>
+                <img class="img-fluid img_seven  p-2 " src="assets/images/gallery page labs 7.png" alt="">
+                <img class="img-fluid img_four  p-2 " src="assets/images/second section.png" alt="">
+                <img class="img-fluid img_eight  p-2 " src="assets/images/gallery page labs 8.png" alt="">
+
+                <div class="d-flex flex-row justify-content-center">
+
+                    <h3 class="main-heading  p-2 " style="color: rgb(187, 38, 38);">Transforming hours into knowledge.
+                    </h3>
+                </div>
+                <img class="img-fluid img_six  p-2 " src="assets/images/3-1.png" alt="">
+                <img class="img-fluid img_seven  p-2 " src="assets/images/3 - 2.png" alt="">
+                <img class="img-fluid img_ten  p-2 " src="assets/images/4-2.png" alt="">
+
+                <div class="d-flex flex-row justify-content-center min_nine">
+
+                    <h3 class="main-heading  p-2 " style="color: rgb(187, 38, 38);">Savor the flavors of home in our hostel dining..
+                    </h3>
+                </div>
+                <img class="img-fluid img_eleven  p-2 " src="assets/images/5-1.png" alt="">
+                <img class="img-fluid img_twevel  p-2 " src="assets/images/5-2.png" alt="">
+                <img class="img-fluid   p-2 " src="assets/images/6.png" alt="">
+                
+
+            </div>
+        </div>
+
+        <!-- <section> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <img class="img-fluid" src="./assets/images/1.png" />
+                    </div>
+                    <div class="col-7">
+                        <img class="img-fluid" src="./assets/images/2.png" />
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center p-5">
+                    <div class="col-4">
+                        <img class="img-fluid" src="./assets/images/2.png" />
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid" src="./assets/images/4.png" />
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid" src="./assets/images/5.png" />
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-4">
+                        <img src="./assets/images/6.png" />
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/7.png" />
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/8.png" />
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-4">
+                        <img src="./assets/images/9.png" />
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/10.png" />
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center ">
+                    <div class="col-4">
+                        <img src="./assets/images/11.png" />
+                    </div>
+                    <div class="col-4">
+                        <img src="./assets/images/12.png" />
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-6">
+                        <img src="./assets/images/13.png" />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- MAIN SLIDER SECTION -->
+
+        <!-- ENDING  MAIN SLIDER SECTION -->
+
+
+
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-row justify-content-center  mt-4">
+                    <img  class="img-fluid" src="assets/images/building 1.png"/>
+                </div>
+                <div class="col-md-6 d-flex flex-row justify-content-center mt-4">
+                    <img class="img-fluid"  src="assets/images/building 2.png"/>
+                </div> 
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <footer class="text-light text-center py-3  foot mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-4 col-sm-7 col-xs-6 col-lg-4 col-xl-4 ">
+                    <img src="./assets/images/logo.png" alt="" class="d-flex img-fluid" />
+                    <p class="paragraph1 mt-2 footer-paragraph" style="color:#555555"> Unlock your potential at Sahasra
+                        College with innovative education, dedicated faculty, and state-of-the-art facilities.</p>
+                    <div class="d-flex ">
+                        <i class="fa-brands fa-facebook pr-2 footicon"></i>
+                        <i class="fa-brands fa-instagram pr-2 footicon"></i>
+                        <i class="fa-brands fa-twitter pr-2 footicon"></i>
+                        <i class="fa-brands fa-youtube pr-2 footicon"></i>
+                        <i class="fa-brands fa-linkedin pr-2 footicon"></i>
+                        <i class="fa-brands fa-pinterest pr-2 footicon"></i>
+                    </div>
+                </div>
+                <div class=" col-4 col-md-2 col-sm-5 col-xs-6 col-lg-2 col-xl-2 ">
+                    <h3 class="paragraph1 mt-5 footer-heading"
+                        style="color:#0C0531;font-weight:bold;font-size:18px;font-family:inter ">Links</h3>
+                    <a href="./index.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Home</p>
+                    </a>
+                    <a href="./mpc.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Courses</p>
+                    </a>
+                    <a href="./gallery.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Gallery</p>
+                    </a>
+                </div>
+                <div class="col-7 col-md-3 col-sm-7 col-xs-6 col-lg-3 col-xl-3">
+                    <h3 class="paragraph1 mt-5 footer-heading"
+                        style="color:#0C0531;font-weight:bold;font-size:18px;font-family:inter">Resource</h3>
+                    <a href="./about.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">About Us</p>
+                    </a>
+                    <a href="./achievements.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Achievements</p>
+                    </a>
+                    <a href="./admission.html">
+                        <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Admission</p>
+                    </a>
+                </div>
+                <div class="col-5 col-md-3 col-sm-5 col-xs-6 col-lg-3 col-xl-3">
+                    <h3 class="paragraph1 mt-5 footer-heading" style="color:#0C0531;font-weight:bold;font-size:18px;font-family:inter">Contacts</h3>
+                    <p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Kakinada</p>
+                    <a href="./contact.html"><p class="paragraph1 footer-paragraph" style="color:#6A6B6C;">Support</p></a>
+                     <p class="paragraph footer-paragraph lap_lap" style="color:#6A6B6C;">+91 9858894999</p>
+                         <p class="paragraph footer-paragraph lap_lap" style="color:#6A6B6C;">+91 9858895999</p>
+                            <p class="paragraph footer-paragraph lap_lap" style="color:#6A6B6C;">+91 9858896999</p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-area-bottom theme-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-9 col-md-12 col-12">
+                        <div class="footer-widget__copyright">
+                            <span style="color:#0C0531"> ©2024 Sahasra Junior College . <i>All Rights Reserved by <a
+                                        href="https://bhavicreations.com/" target="_blank"
+                                        style="text-decoration: none;color:#026F7F">Bhavi Creations</a></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-12 col-12">
+                        <div class="footer-widget__copyright-info info-direction">
+                            <ul class="d-flex align-items-center">
+                                <li><a href="trems.html" style="text-decoration: none;color:#026F7F">Terms and
+                                        conditions</a></li>&nsbp
+
+                                <li><a href="privacy.html" style="text-decoration: none;color:#026F7F">Privacy
+                                        policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div  class="whatsapp_logo ">
+        <div class="tooltip-container">
+     <div class="tooltip">
+       <div class="profile">
+         <div class="user">
+           <div class="img"><img src="assets/images/sahasra new logo_mini.png" class="img-fluid" alt=""></div>
+           <div class="details">
+             <div class="name">Sahasra</div>
+             <div class="username"> College</div>
+           </div>
+         </div>
+         
+       </div>
+     </div>
+     <div class="text">
+       <a class="icon" href="https://api.whatsapp.com/send?phone=9440691781&text=Welcome%20to%20Sahasra%20College"
+       target="_blank">
+         <div class="layer">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span class="whatsappSVG" style="padding-left: 5%;">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" > 
+               
+              <path fill="#ffffff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+
+           </span>
+         </div>
+          
+       </a>
+     </div>
+       </div>
+   </div> 
+
+    <button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up "></i></button>
+
+
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Optional, smooth scrolling animation
+            });
+        }
+
+        // Show scroll button when scrolling down
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        }
+    </script>
+
+<script>
+    function changeYear() {
+        var selectedYear = document.getElementById("yearDropdown").value;
+        var achievementsHeading = document.querySelector(".achive_heading");
+        var achievementsParagraph = document.querySelector(".achive_para");
+        var achievementsImage = document.getElementById("achievementsImage");
+        var achievementsImage2 = document.getElementById("achievementsImage2");
+
+        // Customize the content based on the selected year
+        if (selectedYear === "2019") {
+            achievementsHeading.textContent = "Elevating Excellence, One Success Story at a time.";
+            achievementsParagraph.textContent = "No progress? Find a smarter way and be one of the thousands who succeeded with us!";
+         
+            achievementsImage.src = "./assets/images/2019_img_2.jpg";
+
+
+        } else if (selectedYear === "2020") {
+            achievementsHeading.textContent = "Elevating Excellence, One Success Story at a time.";
+            achievementsParagraph.textContent = "No progress? Find a smarter way and be one of the thousands who succeeded with us!";
+            achievementsImage.src = "./assets/images/2019_img.jpg";
+        } else if (selectedYear === "2021") {
+            achievementsHeading.textContent = "Elevating Excellence, One Success Story at a time.";
+            achievementsParagraph.textContent = "No progress? Find a smarter way and be one of the thousands who succeeded with us!";
+            achievementsImage.src = "./assets/images/achievements.jpg";
+        } else if (selectedYear === "2022") {
+            achievementsHeading.textContent = "Elevating Excellence, One Success Story at a time.";
+            achievementsParagraph.textContent = "No progress? Find a smarter way and be one of the thousands who succeeded with us!";
+            achievementsImage.src = "./assets/images/2023_img.png";
+        } 
+    }
+    
+
+
+    function changeBrochure() {
+                // var selectedYear = document.getElementById("yearDropdown").value;
+                var brochureLink = document.getElementById("brochureLink");
+
+                // Define the base path for your brochures
+                var basePath = "assets/images/2023_img.png";
+
+                // Update the href and download attributes based on the selected year
+                brochureLink.href = basePath;
+                brochureLink.download = "2023_img.png";
+            }
+
+</script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
